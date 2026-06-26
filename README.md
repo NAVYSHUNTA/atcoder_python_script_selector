@@ -3,25 +3,30 @@ AtCoder で使う Python のテンプレートです。
 実行したいファイルの指定が簡単にできるのが特徴です。
 
 # 使い方
+## Python のプログラムを実行する場合
+一般的な
+```console
+$ python a.py
 ```
-python a.py
+を実行する代わりに
+```console
+$ python main.py a
 ```
-を実行するときは
+で実行します。コンテスト中にコマンドの右端のアルファベットを変えるだけで、実行ファイルを変えられるのが嬉しい点です。これに対し、従来はカーソルを `.py` の直前まで持っていく必要があり、これが手間です。
+
+## ファイルの内容を初期化する場合
+`a.py` ~ `g.py` の内容を初期化したい場合は `init_file.sh` を実行してください。実行コマンドは次の通りです。
+```console
+$ ./init_file.sh
 ```
-python main.py a
-```
-で実行できます。
-一番右のアルファベットを変更するだけで実行ファイルを変えられるので少し楽になります。
-これに対し、従来のものはカーソルを `.py` の手前まで移動させる必要があり、手間がかかります。
 
 # フォルダ名について
-本リポジトリ名は長いのでそのまま `git clone` をするとフォルダ名が長いかと思います。
-フォルダ名が `folder_name` となるように `git clone` するには以下のようにすると良いです。
-```
-git clone https://github.com/NAVYSHUNTA/atcoder_python_script_selector.git folder_name
+本リポジトリ名は長いのでそのまま `git clone` をするとフォルダ名が長いかと思います。フォルダ名が `folder_name` となるように `git clone` するには次のように書けばよいです。
+```console
+$ git clone https://github.com/NAVYSHUNTA/atcoder_python_script_selector.git folder_name
 ```
 
-例えば、 `folder_name` を `atcoder` で指定するときは以下のようになります。
-```
-git clone https://github.com/NAVYSHUNTA/atcoder_python_script_selector.git atcoder
+例えば、 `folder_name` を `atcoder` で指定する場合は、以下のように書きます。
+```console
+$ git clone https://github.com/NAVYSHUNTA/atcoder_python_script_selector.git atcoder
 ```
