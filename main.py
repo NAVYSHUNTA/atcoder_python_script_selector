@@ -1,5 +1,6 @@
 import sys
 import subprocess
+import string
 
 def run_script(script_name):
     subprocess.run(["python", script_name + ".py"])
@@ -10,8 +11,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     script_name = sys.argv[1]
-    # AtCoder: A, B, C, D, E, F, G
-    if script_name in "abcdefg":
+    if script_name in string.ascii_lowercase:
         run_script(script_name)
     else:
         print("Invalid script name")
